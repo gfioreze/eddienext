@@ -325,60 +325,64 @@ img {
 }
 
 .category-section {
-  min-height: inherit;
-  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .category-header-1 {
+  text-align: center;
+  margin: 4rem 0;
   background-image: linear-gradient(
     90deg,
-    #131212 0%,
-    #8e1628 25%,
-    #f33d58 70%
+    #131212 42%,
+    #8e1628 52%,
+    #f33d58 80%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 3rem;
   font-family: var(--ff-primary);
 }
 
 .category-header-2 {
+  text-align: center;
+  margin: 4rem 0;
   background-image: linear-gradient(
     90deg,
-    #121313 0%,
-    #177171 25%,
-    #4ef0f0 70%
+    #121313 42%,
+    #177171 52%,
+    #4ef0f0 80%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 3rem;
   font-family: var(--ff-primary);
 }
 
 .category-header-3 {
+  text-align: center;
+  margin: 4rem 0;
   background-image: linear-gradient(
     90deg,
-    #1b1c1a 0%,
-    #52891b 25%,
-    #98f23d 70%
+    #1b1c1a 42%,
+    #52891b 52%,
+    #98f23d 80%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 3rem;
   font-family: var(--ff-primary);
 }
 
 #graphic-design {
-  padding-top: 10.5rem;
+  padding-top: 7.5rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -409,6 +413,7 @@ img {
     font-weight: 900;
     transition: var(--transition);
   }
+
 }
 
 @media screen and (max-width: 735px) {
@@ -429,4 +434,22 @@ img {
     display: flex;
     flex-direction: column;
   }
+}
+
+.works-grid {
+  display: flex;
+  flex: 0.7;
+  flex-wrap: wrap;
+  gap: 6rem;
+  justify-content: center;
+  
+}
+
+.work-box {
+  position: relative;
+  align-self: center;
+  width: 40rem;
+  height: 40rem;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
